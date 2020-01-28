@@ -5,11 +5,13 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-<!-- Заметки сделал для себя, для ориентирования. -->
+<!-- Заметки сделал для себя, для ориентирования... -->
     <!-- Шапка сайта -->
     <header>
-    	<section> <!-- Секция с иконкой поиском и инфо о покупке -->
-    		<img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100px" height="30px">
+       <section> <!-- Секция с иконкой поиском и инфо о покупке -->
+         <div>
+            <a href="index.html"><img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100" height="30"></a>
+         </div>
     		<!-- Здесь будет форма поиска(инпуты) -->
     		<ul>
     			<li><a href="#">Закладки</a></li>
@@ -21,8 +23,8 @@
     	<section> <!-- Секция с вводной частью сйта и формой входа -->
         	<h1>
         		Интернет-магазин
-	   	        строительных материалов
-	   		    и инструментов для ремонта
+	   	   строительных материалов
+	   		и инструментов для ремонта
         	</h1>
             <address>
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
@@ -48,39 +50,40 @@
     <!-- Основной контент страницы -->
     <main>
         <section> <!-- Перечень услуг -->
+            <h2>Перечень услуг и преймуществ</h2> <!--Скроется в css или hidden в теге-->
             <ul>
                 <li>
                     <a href="#">
                         <!-- Здесь будет фоновая картинка -->
-                        <h2>Материалы</h2>
+                        <h3>Материалы</h3>
                         <p>На любой вкус</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <!-- Здесь будет фоновая картинка -->
-                        <h2>Инструмент</h2>
+                        <h3>Инструмент</h3>
                         <p>На все случаи</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <!-- Здесь будет фоновая картинка -->
-                        <h2>Техника</h2>
+                        <h3>Техника</h3>
                         <p>Для стройки</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <!-- Здесь будет фоновая картинка -->
-                        <h2>Скидки 50%</h2>
+                        <h3>Скидки 50%</h3>
                         <p>На 350 товаров</p>
                     </a>
                 </li>
                 <li>
                     <a href="#">
                         <!-- Здесь будет фоновая картинка -->
-                        <h2>Доставка</h2>
+                        <h3>Доставка</h3>
                         <p>Бесплатно</p>
                     </a>
                 </li>
@@ -88,7 +91,7 @@
                 Но как я из подсписка сделаю слайдер? Абсолютным позиционирование разве что. Не знаю. -->
                 <ul>
                     <li>
-                        <h2>Дрели</h2>
+                        <h3>Дрели</h3>
                         <span>Соседям на радость</span>
                         <button type="button">В лево</button>
                         <button type="button">В право</button>
@@ -100,59 +103,59 @@
 
         <section> <!-- Секция с популярными товарами -->
             <div>
-                <h2>Популярные производители:</h2>
+                <h2>Популярные товары:</h2>
                 <a href="#">Все производителя</a>
             </div>
             <!-- Карточки товара Каталог -->
             <ul>
                 <li> <!-- 1 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150px" height="150px">
+                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 9000</h3></a>
                         <span>32500 Р.</span>
                         <span>25500 Р.</span>
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
-                            <button type="button"></button>
+                            <button type="button">В закладки</button>
                         </div>
                     </article>
                 </li>
                 <li> <!-- 2 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150px" height="150px">
+                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3></a>
                         <span>22500 Р.</span>
                         <span>15500 Р.</span>
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
-                            <button type="button"></button>
+                            <button type="button">В закладки</button>
                         </div>
                     </article>
                 </li>
                 <li> <!-- 3 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150px" height="150px">
+                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                         <span>30500 Р.</span>
                         <span>25500 Р.</span>
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
-                            <button type="button"></button>
+                            <button type="button">В закладки</button>
                         </div>
                     </article>
                 </li>
                 <li> <!-- 4 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150px" height="150px">
+                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
                         <span>12500 Р.</span>
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
-                            <button type="button"></button>
+                            <button type="button">В закладки</button>
                         </div>
                     </article>
                 </li>
@@ -167,14 +170,14 @@
 
             <div> <!-- Производители -->
                 <ul>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="bosch" width="100px" height="150px"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
                 </ul>
             </div>
         </section>
@@ -239,7 +242,8 @@
 			<p>
 				Вы можете забрать товар сами,
 				заехав в наш офис:
-			</p>
+         </p>
+         <img src="https://via.placeholder.com/150x100" alt="">
             <!-- Здесь будет карта -->
 			<a href="#">Заблудились? Напишите нам!</a>
     	</section>
@@ -248,8 +252,10 @@
     <!-- Подвал сайта -->
     <footer>
     	<section>
-    		<img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100px" height="30px">
-
+         <div>
+            <img src="https://via.placeholder.com/150x100" alt="Техномарт" width="150" height="50"> 
+         </div>
+    		
 			<ul>
 				<li><a href="#">Компания</a></li>
 				<li><a href="#">Новости</a></li>
@@ -290,7 +296,7 @@
 
     		<p>
     			Разработанно-
-    			<a href="htmlacademy.ru">htmlacademy.ru</a>
+    			<a href="#">htmlacademy.ru</a>
     		</p>
     	</section>
     </footer>
