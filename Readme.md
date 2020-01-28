@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Eduard Kim](https://up.htmlacademy.ru/htmlcss/27/user/1269659).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирьян Горячев](https://htmlacademy.ru/profile/id578191).
 
 ---
 
