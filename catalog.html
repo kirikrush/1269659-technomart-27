@@ -10,12 +10,25 @@
     <header>
         <section> <!-- Секция с иконкой поиском и инфо о покупке -->
             <div>
-                <a href="index.html"><img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100" height="30"></a>
+                <a href="index.html"><img src="img/logo-technomart.svg"Техномарт" width="109" height="19"></a>
             </div>
-            <!-- Здесь будет форма поиска(инпуты) -->
+            <div>
+                <button type="submit">
+                    <img src="img/icon-search.svg" alt="Кнопка поиска" width="17" height="17">
+                </button>
+            </div>
+            <form action="" method="POST">
+                <input type="text" name="search" placeholder="Поиск:">
+            </form>
             <ul>
-                <li><a href="#">Закладки</a></li>
-                <li><a href="#">Корзина: 10</a></li>
+                <li>
+                    <img src="img/icon-bookmark.svg" alt="" width="14" height="16">
+                    <a href="#">Закладки</a>
+                </li>
+                <li>
+                    <img src="img/icon-cart.svg" alt="" width="15" height="15">
+                    <a href="#">Корзина: 10</a>
+                </li>
                 <li><a href="#">Оформить заказ</a></li>
             </ul>
         </section>
@@ -28,12 +41,15 @@
             </h1>
 
             <address>
+                <img src="img/icon-phone.svg" alt="" width="19" height="19">
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
 
             <div>
+                <img src="img/icon-user.svg" alt="" width="20" height="18">
                 <p>Равшан Джамшутович</p>
+                <img src="img/icon-logout.svg" alt="" width="20" height="17">
                 <a href="#">Выйти</a>
                 <ul>
                     <li><a href="#">Мои заказы</a></li>
@@ -58,9 +74,14 @@
     <!-- Основной контент страницы -->
     <main>
         <ul> <!-- Хлебные крошки -->
-            <li><a href="#">Главная</a></li>
+            <li><a href="index.html">
+                <img src="img/icon-home.svg" alt="" width="14" height="12">
+                <img src="img/icon-right-small.svg" alt="" width="8" height="12">
+            </a></li>
             <li><a href="catalog.html">Каталог</a></li>
+            <img src="img/icon-right-small.svg" alt="" width="8" height="12">
             <li><a href="#">Инструмент</a></li>
+            <img src="img/icon-right-small.svg" alt="" width="8" height="12">
             <li>Перфораторы</li>
         </ul>
 
@@ -68,11 +89,44 @@
 
         <aside> <!-- Левая колонка с фильтром -->
             <!-- Здесь будет форма -->
-            <hr>
-            <!-- Здесь будет форма -->
-            <hr>
-            <!-- Здесь будет форма -->
-            <button type="button">Показать</button>
+            <p>фильтр:</p>
+            <form action="" method="POST" oninput="range.value="range".value>
+                <div>
+                    <h3>Цена:</h3>
+                    <input type="range" name="range" id="range" min="0" max="30000" step="1">
+                    <output name="range" id="range" value="0">0</output>
+                    -
+                    <output name="range" id="range" value="30000">30000</output>
+                <!-- Я не знаю как сделать как на макете, и в курсах такого не было. -->
+                </div>
+                <div>
+                    <h3>Производители:</h3>
+                    <input type="checkbox" name="checkbox" id="bosch">
+                    <label for="bosch">bosch</label>
+
+                    <input type="checkbox" name="checkbox" id="inter">
+                    <label for="inter">Интерскол</label>
+
+                    <input type="checkbox" name="checkbox" id="makita">
+                    <label for="makita">Makita</label>
+
+                    <input type="checkbox" name="checkbox" id="dewalt">
+                    <label for="dewalt">Dewalt</label>
+
+                    <input type="checkbox" name="checkbox" id="hitachi">
+                    <label for="hitachi">Hitachi</label>
+                    <!-- Если я не ошибаюсь убать галочки и изменить их на иконки делается в ксс -->
+                </div>
+                <div>
+                    <h3>Питание:</h3>
+                    <input type="radio" name="radio" id="acum">
+                    <label for="acum">Аккамуляторные</label>
+
+                    <input type="radio" name="radio" id="set">
+                    <label for="set">Сетевые</label>
+                </div>
+            </form>
+            <button type="submit">Показать</button>
         </aside>
 
         <div> 
@@ -81,8 +135,8 @@
                 <li><a href="#">цене</a></li>
                 <li><a href="#">По типу</a></li>
                 <li><a href="#">По функционалу</a></li>
-                <a href="#">По возрастанию</a>
-                <a href="#">По убыванию</a>
+                <a href="#"><img src="img/icon-up-dir.svg" alt="" width="11" height="10"></a>
+                <a href="#"><img src="img/icon-down-dir.svg" alt="" width="11" height="10"></a>
             </ul>
         </div>
 
@@ -92,7 +146,7 @@
             <ul>
                 <li> <!-- 1 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_1.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3></a>
                         <span>22500 Р.</span>
                         <span>15500 Р.</span>
@@ -105,7 +159,7 @@
                 </li>
                 <li> <!-- 2 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_2.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                         <span>30500 Р.</span>
                         <span>25500 Р.</span>
@@ -118,7 +172,7 @@
                 </li>
                 <li> <!-- 3 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_3.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
                         <span>12500 Р.</span>
 
@@ -130,7 +184,7 @@
                 </li>
                 <li> <!-- 4 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_1.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3></a>
                         <span>22500 Р.</span>
                         <span>15500 Р.</span>
@@ -143,7 +197,7 @@
                 </li>
                 <li> <!-- 5 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_2.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                         <span>30500 Р.</span>
                         <span>25500 Р.</span>
@@ -156,7 +210,7 @@
                 </li>
                 <li> <!-- 6 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_3.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
                         <span>12500 Р.</span>
 
@@ -168,7 +222,7 @@
                 </li>
                 <li> <!-- 7 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_1.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3></a>
                         <span>22500 Р.</span>
                         <span>15500 Р.</span>
@@ -181,7 +235,7 @@
                 </li>
                 <li> <!-- 8 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_2.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                         <span>30500 Р.</span>
                         <span>22500 Р.</span>
@@ -194,7 +248,7 @@
                 </li>
                 <li> <!-- 9 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_3.png" alt="" width="150" height="150">
                         <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
                         <span>12500 Р.</span>
 
@@ -232,7 +286,7 @@
     <footer>
         <section>
             <div>
-                <img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100" height="30">
+                <img src="img/logo-technomart.svg" alt="Техномарт" width="138" height="23">
             </div>           
 
             <ul>
@@ -263,10 +317,10 @@
             </p>
 
             <ul>
-                <li><a href="#">Вконтакте</a></li>
-                <li><a href="#">Фейсбук</a></li>
-                <li><a href="#">Инстаграм</a></li>
-            </ul>
+				<li><a href="#"><img src="img/icon-vk.svg" alt="" width="42" height="42"></a></li>
+				<li><a href="#"><img src="img/icon-fb.svg" alt="" width="42" height="42"></a></li>
+				<li><a href="#"><img src="img/icon-insta.svg" alt="" width="42" height="42"></a></li>
+			</ul>
 
             <p>
                 Обратная связь:

@@ -9,13 +9,28 @@
     <!-- Шапка сайта -->
     <header>
        <section> <!-- Секция с иконкой поиском и инфо о покупке -->
-         <div>
-            <a href="index.html"><img src="https://via.placeholder.com/150x100" alt="Техномарт" width="100" height="30"></a>
+         <div>             
+            <a href="index.html">
+                <img src="img/logo-technomart.svg" alt="Техномарт" width="109" height="19">
+            </a><!-- Не забыть изменить цвет в svg на #fff -->
          </div>
-    		<!-- Здесь будет форма поиска(инпуты) -->
+            <div>
+                <button type="submit">
+                    <img src="img/icon-search.svg" alt="Кнопка поиска" width="17" height="17">
+                </button>
+            </div>
+            <form action="" method="POST">
+                <input type="text" name="search" placeholder="Поиск:">
+            </form>
     		<ul>
-    			<li><a href="#">Закладки</a></li>
-    			<li><a href="#">Корзина</a></li>
+    			<li>
+                    <img src="img/icon-bookmark.svg" alt="" width="14" height="16">
+                    <a href="#">Закладки</a>
+                </li>
+    			<li>
+                    <img src="img/icon-cart.svg" alt="" width="15" height="15">
+                    <a href="#">Корзина</a>
+                </li>
     			<li><a href="#">Оформить заказ</a></li>
     		</ul>
     	</section>
@@ -27,9 +42,11 @@
 	   		    и инструментов для ремонта
         	</h1>
             <address>
+                <img src="img/icon-phone.svg" alt="" width="19" height="19">
                 <a href="tel:+78125550555">+7(812)555-05-55</a>
                 г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             </address>
+            <img src="img/icon-login.svg" alt="" width="20" height="17">
             <a href="#">Войти</a>
             <a href="#">Регистрация</a>
     	</section>
@@ -57,6 +74,10 @@
                         <!-- Здесь будет фоновая картинка -->
                         <h3>Материалы</h3>
                         <p>На любой вкус</p>
+                        <img src="img/icon-1.svg" alt="" width="44" height="65">
+                        <!--Тут у меня есть вопроссы .. по макету.
+                        Как-бы в одной картинке 2, только одна свг а вторая фоновая.
+                        Этого момента я не понял, хотелось бы разобрать с тобой потом.-->
                     </a>
                 </li>
                 <li>
@@ -64,6 +85,7 @@
                         <!-- Здесь будет фоновая картинка -->
                         <h3>Инструмент</h3>
                         <p>На все случаи</p>
+                        <img src="img/icon-2.svg" alt="" width="75" height="61">
                     </a>
                 </li>
                 <li>
@@ -71,6 +93,7 @@
                         <!-- Здесь будет фоновая картинка -->
                         <h3>Техника</h3>
                         <p>Для стройки</p>
+                        <img src="img/icon-3.svg" alt="" width="78" height="62">
                     </a>
                 </li>
                 <li>
@@ -78,6 +101,7 @@
                         <!-- Здесь будет фоновая картинка -->
                         <h3>Скидки 50%</h3>
                         <p>На 350 товаров</p>
+                        <img src="img/icon-4.svg" alt="" width="59" height="72">
                     </a>
                 </li>
                 <li>
@@ -85,20 +109,22 @@
                         <!-- Здесь будет фоновая картинка -->
                         <h3>Доставка</h3>
                         <p>Бесплатно</p>
+                        <img src="img/icon-5.svg" alt="" width="78" height="63">
                     </a>
                 </li>
                 <!-- Сделал по памяти, не успел записать этот момент как нужно было сделать.
                 Но как я из подсписка сделаю слайдер? Абсолютным позиционирование разве что. Не знаю. -->
                 <li>
-                    <button type="button">В лево</button>
+                    <button type="button"><img src="img/icon-left.svg" alt="" width="22" height="40"></button>
                     <ul>
                         <li>
+                            <!--Фоновая картинка через ксс-->
                             <h3>Дрели</h3>
                             <span>Соседям на радость</span>                     
                             <a href="catalog.html">Открыть каталог</a>
                         </li>                        
                     </ul>
-                    <button type="button">В право</button>
+                    <button type="button"><img src="img/icon-right.svg" alt="" width="22" height="40"></button>
                 </li>
             </ul>
         </section>
@@ -112,10 +138,10 @@
             <ul>
                 <li> <!-- 1 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_1.png" alt="" width="218" height="170">
                         <a href="#"><h3>Перфоратор BOSCH BFG 9000</h3></a>
                         <span>32500 Р.</span>
-                        <span>25500 Р.</span>
+                        <a>25500 Р.</a> <!-- Тут будет фоновая картинка -->
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
@@ -125,10 +151,10 @@
                 </li>
                 <li> <!-- 2 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_2.png" alt="" width="218" height="170">
                         <a href="#"><h3>Перфоратор BOSCH BFG 3000</h3></a>
                         <span>22500 Р.</span>
-                        <span>15500 Р.</span>
+                        <a>15500 Р.</a> <!-- Тут будет фоновая картинка -->
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
@@ -138,10 +164,10 @@
                 </li>
                 <li> <!-- 3 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_3.png" alt="" width="218" height="170">
                         <a href="#"><h3>Перфоратор BOSCH BFG 6000</h3></a>
                         <span>30500 Р.</span>
-                        <span>25500 Р.</span>
+                        <a>25500 Р.</a> <!-- Тут будет фоновая картинка -->
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
@@ -151,9 +177,9 @@
                 </li>
                 <li> <!-- 4 -->
                     <article>
-                        <img src="https://via.placeholder.com/150x100" alt="" width="150" height="150">
+                        <img src="img/Perforator_4.png" alt="" width="218" height="170">
                         <a href="#"><h3>Перфоратор BOSCH BFG 2000</h3></a>
-                        <span>12500 Р.</span>
+                        <a>12500 Р.</a> <!-- Тут будет фоновая картинка -->
 
                         <div> <!-- Здесь будет :hover -->
                             <a href="#">Купить</a>
@@ -172,14 +198,14 @@
 
             <div> <!-- Производители -->
                 <ul>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
-                    <li><a href="#"><img src="https://via.placeholder.com/150x100" alt="" width="100" height="150"></a></li>
+                    <li><a href="#"><img src="img/bosch.png" alt="" width="126" height="37"></a></li>
+                    <li><a href="#"><img src="img/Makita.png" alt="" width="123" height="40"></a></li>
+                    <li><a href="#"><img src="img/DeWALT.png" alt="" width="146" height="44"></a></li>
+                    <li><a href="#"><img src="img/Интерскол.png" alt="" width="200" height="88"></a></li>
+                    <li><a href="#"><img src="img/Hitachi.png" alt="" width="169" height="31"></a></li>
+                    <li><a href="#"><img src="img/LG.png" alt="" width="121" height="73"></a></li>
+                    <li><a href="#"><img src="img/AEG.png" alt="" width="151" height="96"></a></li>
+                    <li><a href="#"><img src="img/Metabo.png" alt="" width="204" height="69"></a></li>
                 </ul>
             </div>
         </section>
@@ -203,6 +229,7 @@
                 </div>
 
                 <div>
+                    <img src="img/Layer_118_copy.png" alt="" width="10" height="279">
                     <h3>Доставка</h3>
                     <p>
                        Мы с удовольствием доставим ваш товар прямо
@@ -210,6 +237,7 @@
                        Ведь мы неплохо заработаем,
                        поднимая его на ваш этаж!
                     </p>
+                    <img src="img/Layer_131.png" alt="" width="468" height="261">
                 </div>
             </article>
         </section>
@@ -230,9 +258,18 @@
 			</p>
 
 			<ul>
-				<li>Деловые линии</li>
-				<li>Автотрейдинг</li>
-				<li>ЖелДорЭкспедиция</li>
+				<li>
+                    <img src="img/Layer_23_copy_3.png" alt="" width="25" height="2">
+                    Деловые линии
+                </li>
+				<li>
+                    <img src="img/Layer_23_copy_3.png" alt="" width="25" height="2">
+                    Автотрейдинг
+                </li>
+				<li>
+                    <img src="img/Layer_23_copy_3.png" alt="" width="25" height="2">
+                    ЖелДорЭкспедиция
+                </li>
 			</ul>
 
 			<a href="#">Подробнее о компании</a>
@@ -244,9 +281,10 @@
 			<p>
 				Вы можете забрать товар сами,
 				заехав в наш офис:
-         </p>
-         <img src="https://via.placeholder.com/150x100" alt="">
+            </p>
+
             <!-- Здесь будет карта -->
+            <img src="img/Слой_5.png" alt="" width="300" height="158">
 			<a href="#">Заблудились? Напишите нам!</a>
     	</section>
     </main>
@@ -255,7 +293,7 @@
     <footer>
     	<section>
          <div>
-            <img src="https://via.placeholder.com/150x100" alt="Техномарт" width="150" height="50"> 
+            <img src="img/logo-technomart.svg" alt="Техномарт" width="138" height="23"> <!-- Не забыть изменить цвет в svg yf #fff -->
          </div>
     		
 			<ul>
@@ -286,9 +324,9 @@
     		</p>
 
 			<ul>
-				<li><a href="#">Вконтакте</a></li>
-				<li><a href="#">Фейсбук</a></li>
-				<li><a href="#">Инстаграм</a></li>
+				<li><a href="#"><img src="img/icon-vk.svg" alt="" width="42" height="42"></a></li>
+				<li><a href="#"><img src="img/icon-fb.svg" alt="" width="42" height="42"></a></li>
+				<li><a href="#"><img src="img/icon-insta.svg" alt="" width="42" height="42"></a></li>
 			</ul>
 
     		<p>
