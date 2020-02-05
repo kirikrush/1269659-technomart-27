@@ -16,7 +16,7 @@
          </div>
          <div class="search"> <!-- Форма поиска -->
             <form action="" method="post">
-               <input type="image" src="img/svg/icon-search.svg" alt="Поиск" width="17" height="17">
+               <button>Поиск</button>
                <input type="text" name="search" placeholder="Поиск:">
             </form>
          </div>
@@ -41,7 +41,7 @@
             строительных материалов
             и инструментов для ремонта
          </h1>
-         <address class="header-adress"> <!-- Блок адресса -->
+         <address class="header-adвress"> <!-- Блок адресса -->
             <a href="tel:+78125550555">+7(812)555-05-55</a> <!-- Псевдоелемент ::before с иконкой -->
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
          </address>
@@ -110,8 +110,8 @@
                <!-- Здесь будет фоновая картинка -->
             </li>
                <!-- ВОПРОС. Как из подписка сделать слайдер?. -->
-            <li class="slider">
-               <button type="button">В лево</button>
+            <li class="slider-1">
+               <button>Влево</button>
                <ul>
                   <li>
                   <!--Фоновая картинка через ксс-->
@@ -120,7 +120,19 @@
                   <a href="catalog.html">Открыть каталог</a>
                   </li>
                </ul>
-               <button type="button">В право</button>
+               <button>Вправо</button>
+            </li>
+            <li class="slider-2">
+               <button>Влево</button>
+               <ul>
+                  <li>
+                  <!--Фоновая картинка через ксс-->
+                  <h3>Перфораторы</h3>
+                  <span>Настоящие мужские игрушки</span>
+                  <a href="catalog.html">Открыть каталог</a>
+                  </li>
+               </ul>
+               <button>Вправо</button>
             </li>
          </ul>
       </section>
@@ -215,22 +227,52 @@
             </div>
             <div class="list-service"> <!-- Список сервиса -->
                <ul>
-               <li><button type="button">Доставка</button></li>
-               <li><button type="button">Гарантия</button></li>
-               <li><button type="button">Кредит</button></li>
+                  <li><button>Доставка</button></li>
+                  <li><button>Гарантия</button></li>
+                  <li><button>Кредит</button></li>
                </ul>
             </div>
             <!-- Разделяющая картинка -->
-            <div class="list-item"> <!-- Элемент списка -->
-               <h3>Доставка</h3>
-               <p>
-               Мы с удовольствием доставим ваш товар прямо
-               к вашему подьезду совершенно бесплатно!
-               Ведь мы неплохо заработаем,
-               поднимая его на ваш этаж!
-               </p>
-               <img src="img/Layer_131.png" alt="" width="468" height="261">
-            </div>
+            <ul>
+               <li class="list-item"> <!-- Элемент списка -->
+                  <h3>Доставка</h3>
+                  <p>
+                  Мы с удовольствием доставим ваш товар прямо
+                  к вашему подьезду совершенно бесплатно!
+                  Ведь мы неплохо заработаем,
+                  поднимая его на ваш этаж!
+                  </p>
+               </li>
+            </ul>
+            <ul>
+               <li class="list-item"> <!-- Элемент списка -->
+                  <h3>Гарантия</h3>
+                  <p>
+                     Если купленный у нас товар поломается или заискрит, 
+                     а также в случае пожара, спровоцированного его возгоранием,  
+                     вы всегда можете быть уверены в нашей гарантии. Мы обменяем 
+                     сгоревший товар на новый. 
+                     Дом уж восстановите как-нибудь сами.
+                  </p>
+               </li>
+               <li class="list-item"> <!-- Элемент списка -->
+                  <h3>Доставка</h3>
+                  <p>
+                     Мы с удовольствием доставим ваш товар прямо
+                     к вашему подьезду совершенно бесплатно!
+                     Ведь мы неплохо заработаем,
+                     поднимая его на ваш этаж!
+                  </p>
+               </li>
+               <li class="list-item"> <!-- Элемент списка -->
+                  <h3>Гарантия</h3>
+                  <p>
+                     Залезть в долговую яму стало проще! 
+                     Кредитные консультанты придут вам на помощь.
+                  </p>
+                  <button>Отправить заявку</button>
+               </li>
+            </ul>
          </article>
       </section>
 
@@ -260,28 +302,32 @@
             </p>
             <!-- Здесь же будет раскрывающаяся карта -->
             <img src="img/Слой_5.png" alt="" width="300" height="158">
-            <button type="submit">Заблудились? Напишите нам!</button>
+            <button>Заблудились? Напишите нам!</button>
             
             <div class="visually-hidden"> <!--Развернутая карта-->
                <img src="img/Слой_4.png" alt="" width="940" height="447">
-               <button type="button">Закрыть</button>
+               <button>Закрыть</button>
             </div>
             <!-- Здесь будет попап -->
          </div>
       </section>
 
       <section class="visually-hidden">
-         <div>
-            <form action="" method="post">
-               <label for="name">Ваше имя:</label>
-               <input type="text" name="name" id="name" placeholder="Имя Фамилия">
-               <label for="email">Ваш e-mail:</label>
-               <input type="email" email="name" id="email" placeholder="email@example.com">
-               <label for="text">Текст письма:</label>
+         <form action="" method="post">
+            <label>
+               Ваше имя:
+               <input type="text" name="name" placeholder="Имя Фамилия">
+            </label>
+            <label>
+               Ваш e-mail:
+               <input type="email" name="email" placeholder="email@example.com">
+            </label>
+            <label>
+               Текст письма:
                <textarea name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
-               <input type="submit" value="Отправить">
-            </form>
-         </div>
+            </label>
+            <button>Отправить</button>
+         </form>
       </section>
    </main>
 
@@ -291,7 +337,7 @@
          <div class="footer-logo">
             <img src="img/svg/logo-technomart.svg" alt="Техномарт" width="138" height="23"> <!-- Не забыть изменить цвет в svg yf #fff -->
          </div>
-         <ul class="list-1">
+         <ul class="list-1" aria-label="Дополнительная навигация в подввале">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="catalog.html">Каталог</a></li>
@@ -302,7 +348,7 @@
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
             <a href="tel:+78125550555">+7(812)555-05-55</a>
          </address>
-         <ul class="list-2">
+         <ul class="list-2" aria-label="Навигация по каталогу">
             <li><a href="#">Материалы</a></li>
             <li><a href="#">Техника</a></li>
             <li><a href="#">Инструмент</a></li>
@@ -316,9 +362,9 @@
          Все права защищены
          </p>
          <ul class="socials-icon"> <!-- Социальные иконки -->
-            <li><a href="#">vk</a></li>
-            <li><a href="#">fb</a></li>
-            <li><a href="#">insta</a></li>
+            <li><a href="#" aria-label="Вконтакте"></a></li>
+            <li><a href="#"aria-label="Фейсбук"></a></li>
+            <li><a href="#"aria-label="Инстаграм"></a></li>
          </ul> 
          <p>
          Обратная связь:

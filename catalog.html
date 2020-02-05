@@ -16,7 +16,7 @@
 				</div>
 				<div class="search"> <!-- Форма поиска -->
 					<form action="" method="post">
-						<input type="image" src="img/svg/icon-search.svg" alt="Поиск" width="17" height="17">
+						<button>Поиск</button>
 						<input type="text" name="search" placeholder="Поиск:">
 					</form>
 				</div>
@@ -36,19 +36,18 @@
 			</section>
 
 			<section class="content-header"> <!-- Секция с вводной частью сйта и формой входа -->
-				<h1>
+				<p>
 					Интернет-магазин
 					строительных материалов
 					и инструментов для ремонта
-				</h1>
-				<address class="header-adress"> <!-- Блок адресса -->
+				</p>
+				<address class="header-address"> <!-- Блок адресса -->
 					<a href="tel:+78125550555">+7(812)555-05-55</a>
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 				</address>
 				<div class="user-profile"> <!-- Профиль -->
-					<button type="button">Профиль</button>
 					<p>Равшан Джамшутович</p>
-					<button type="button">Выйти</button>
+					<button>Выйти</button>
 					<ul>
 						<li><a href="#">Мои заказы</a></li>
 						<li><a href="#">Личный кабинет</a></li>
@@ -79,46 +78,63 @@
 				</ul>
 			</div>
 
-			<h2>Перфораторы</h2> 
+			<h1>Перфораторы</h1> 
 
 			<aside class="column-form"> <!-- Левая колонка с фильтром -->
-				<p>фильтр:</p>
-				<form action="" method="post" oninput="range.value=range.value">
-					<div class="form-price">
+				<h2>фильтр:</h2>
+				<form action="" method="post" oninput="range.value=rang.value">
+					<div class="form-list">
 					<h3>Цена:</h3>
 						<input type="range" name="range" id="range" min="0" max="30000" step="1">
 						<output name="range" id="range" value="0">0</output>
 						-
-						<output name="range" id="range" value="30000">30000</output>
+						<output name="range" id="rang" value="30000">30000</output>
 						<!-- Я не знаю как сделать как на макете, и в курсах такого не было. -->
 					</div>
-					<div class="form-manufacturers">
+					<div class="form-list">
 						<h3>Производители:</h3>
-						<input type="checkbox" name="checkbox" id="bosch" checked>
-						<label for="bosch">bosch</label>
-
-						<input type="checkbox" name="checkbox" id="inter">
-						<label for="inter">Интерскол</label>
-
-						<input type="checkbox" name="checkbox" id="makita" checked>
-						<label for="makita">Makita</label>
-
-						<input type="checkbox" name="checkbox" id="dewalt">
-						<label for="dewalt">Dewalt</label>
-
-						<input type="checkbox" name="checkbox" id="hitachi">
-						<label for="hitachi">Hitachi</label>
+						<label>
+							<input type="checkbox" hidden>
+							<div class="custom-checkbox"></div>
+							<cpsn>bosch</cpsn>
+						</label>
+						<label>
+							<input type="checkbox" hidden>
+							<div class="custom-checkbox"></div>
+							<cpsn>Интерскол</cpsn>
+						</label>
+						<label>
+							<input type="checkbox" hidden>
+							<div class="custom-checkbox"></div>
+							<cpsn>Makita</cpsn>
+						</label>
+						<label>
+							<input type="checkbox" hidden>
+							<div class="custom-checkbox"></div>
+							<cpsn>Dewalt</cpsn>
+						</label>
+						<label>
+							<input type="checkbox" hidden>
+							<div class="custom-checkbox"></div>
+							<cpsn>Hitachi</cpsn>
+						</label>
 					</div>
-					<div class="form-radio">
+					<div class="form-list">
 						<h3>Питание:</h3>
-						<input type="radio" name="radio" id="acum">
-						<label for="acum">Аккамуляторные</label>
-						<input type="radio" name="radio" id="set">
-						<label for="set">Сетевые</label>
+						<label>
+							<input type="radio" hidden>
+							<div class="custom-radio"></div>
+							<cpsn>Аккамуляторные</cpsn>
+						</label>
+						<label>
+							<input type="radio" hidden>
+							<div class="custom-radio"></div>
+							<cpsn>Сетевые</cpsn>
+						</label>
 					</div>
-				</form>
-				<button type="submit">Показать</button>
-			</aside>
+					<button>Показать</button>
+				</form>			
+			</aside>	
 
 			<section class="main-catalog"> <!-- Секция каталга -->
 				<div class="sort-catalog"> <!-- Сортировка каталога -->
@@ -127,8 +143,10 @@
 						<li><a href="#">По цене</a></li>
 						<li><a href="#">По типу</a></li>
 						<li><a href="#">По функционалу</a></li>
-						<button type="button">На вовышение</button>
-						<button type="button">На убывание</button>
+					</ul>
+					<ul>
+						<li><a href="#">На возвышение</a></li>
+						<li><a href="#">На убывание</a></li>
 					</ul>
 				</div>
 				<div class="list-catalog"> <!-- Карточки товара -->
@@ -143,7 +161,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -156,7 +174,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -168,7 +186,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -181,7 +199,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -194,7 +212,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -206,7 +224,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -219,7 +237,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -232,7 +250,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -244,7 +262,7 @@
 						
 								<div class="visually-hidden"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
-									<button type="button">В закладки</button>
+									<button>В закладки</button>
 								</div>
 							</article>
 						</li>
@@ -257,10 +275,13 @@
 							<li><a href="#">Следующая</a></li>
 						</ul>
 					</div>
-					<div class="visually-hidden"> <!-- Всплывающее окно, тоже не нашел его в макете -->
+					<div class="visually-hidden"> 
 						<p>Товар добавлен в корзину!</p>
-						<a href="">Оформить заказ</a>
-						<button type="button">Продолжить покупки</button>
+						<div class="btn-shop">
+							<a href="">Оформить заказ</a>
+							<button>Продолжить покупки</button>
+						</div>
+						<button>Закрыть</button>
 					</div>
 				</div>
 			</section>
@@ -281,7 +302,7 @@
 				<div class="footer-logo">
 					<img src="img/svg/logo-technomart.svg" alt="Техномарт" width="138" height="23"> <!-- Не забыть изменить цвет в svg yf #fff -->
 				</div>
-				<ul class="list-1">
+				<ul class="list-1" aria-label="Дополнительная навигация в подввале">
 					<li><a href="#">Компания</a></li>
 					<li><a href="#">Новости</a></li>
 					<li><a href="catalog.html">Каталог</a></li>
@@ -292,7 +313,7 @@
 					г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
 					<a href="tel:+78125550555">+7(812)555-05-55</a>
 				</address>
-				<ul class="list-2">
+				<ul class="list-2" aria-label="Навигация по каталогу">
 					<li><a href="#">Материалы</a></li>
 					<li><a href="#">Техника</a></li>
 					<li><a href="#">Инструмент</a></li>
@@ -306,9 +327,9 @@
 				Все права защищены
 				</p>
 				<ul class="socials-icon"> <!-- Социальные иконки -->
-					<li><a href="#">vk</a></li>
-					<li><a href="#">fb</a></li>
-					<li><a href="#">insta</a></li>
+					<li><a href="#" aria-label="Вконтакте"></a></li>
+					<li><a href="#"aria-label="Фейсбук"></a></li>
+					<li><a href="#"aria-label="Инстаграм"></a></li>
 				</ul> 
 				<p>
 				Обратная связь:
