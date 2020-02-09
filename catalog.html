@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="ru">
-	<head>
-		<meta charset="UTF-8">
-		<title>Каталог товаров</title>
-	</head>
+   <head>
+      <meta charset="UTF-8">
+      <title>HTML Academy: Каталог</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
+   </head>
 	<body>
 	<!-- Заметки сделал для себя, для ориентирования. -->
 	<!-- Шапка сайта -->
@@ -16,7 +19,7 @@
 				</div>
 				<div class="search"> <!-- Форма поиска -->
 					<form action="" method="post">
-						<button>Поиск</button>
+						<button aria-label="Кнопка поиска"></button>
 						<input type="text" name="search" placeholder="Поиск:">
 					</form>
 				</div>
@@ -47,7 +50,7 @@
 				</address>
 				<div class="user-profile"> <!-- Профиль -->
 					<p>Равшан Джамшутович</p>
-					<button>Выйти</button>
+					<button aria-label="Выйти"></button>
 					<ul>
 						<li><a href="#">Мои заказы</a></li>
 						<li><a href="#">Личный кабинет</a></li>
@@ -96,27 +99,27 @@
 						<label>
 							<input type="checkbox" hidden>
 							<div class="custom-checkbox"></div>
-							<cpsn>bosch</cpsn>
+							<span>bosch</span>
 						</label>
 						<label>
 							<input type="checkbox" hidden>
 							<div class="custom-checkbox"></div>
-							<cpsn>Интерскол</cpsn>
+							<span>Интерскол</span>
 						</label>
 						<label>
 							<input type="checkbox" hidden>
 							<div class="custom-checkbox"></div>
-							<cpsn>Makita</cpsn>
+							<span>Makita</span>
 						</label>
 						<label>
 							<input type="checkbox" hidden>
 							<div class="custom-checkbox"></div>
-							<cpsn>Dewalt</cpsn>
+							<span>Dewalt</span>
 						</label>
 						<label>
 							<input type="checkbox" hidden>
 							<div class="custom-checkbox"></div>
-							<cpsn>Hitachi</cpsn>
+							<span>Hitachi</span>
 						</label>
 					</div>
 					<div class="form-list">
@@ -124,12 +127,12 @@
 						<label>
 							<input type="radio" hidden>
 							<div class="custom-radio"></div>
-							<cpsn>Аккамуляторные</cpsn>
+							<span>Аккамуляторные</span>
 						</label>
 						<label>
 							<input type="radio" hidden>
 							<div class="custom-radio"></div>
-							<cpsn>Сетевые</cpsn>
+							<span>Сетевые</span>
 						</label>
 					</div>
 					<button>Показать</button>
@@ -159,7 +162,7 @@
 								<span>22500 Р.</span>
 								<span>15500 Р.</span>
 						
-								<div class="visually-hidden"> <!-- Здесь будет :hover -->
+								<div class="popup-shop"> <!-- Здесь будет :hover -->
 									<a href="#">Купить</a>
 									<button>В закладки</button>
 								</div>

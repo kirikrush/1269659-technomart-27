@@ -1,0 +1,377 @@
+
+/* Для быстрого ориентирования и наглядности разделяю блоки коментариями(потом лишнее уберу) */
+
+/* Общие стили для конкретных элементов */
+/* стили для боди */
+body {
+   margin: 0;
+   padding: 0;
+
+   /* Типографика */
+   font-family: 'Cuprum', 'PT Sans', 'MyriadPro' sans-serif;
+   font-size: 16px;
+   font-weight: normal;
+   line-height: 24px;
+   color: black;
+
+   /* Оформление */
+   background-color: white;
+}
+/* стили для всех ссылок на странице */
+a {
+   text-decoration: none;
+   font-family: 'Cuprum';
+}
+/* стили для всех списков */
+ul {
+   list-style: none;
+}
+/* стили для кнопок */
+button {
+   color: white;
+   text-align: center;
+   vertical-align: middle ;
+   font-size: 14px;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+/* Стили для элементов по разделам и секциям */
+
+/* header */
+
+/* Секция с иконкой поиском и инфо о покупке */
+header .top-header {
+   background-color: #293449;
+}
+/* Логотип */
+.header-logo {
+   background-color: #ee3643;
+}
+/* форма поиска */
+.search {
+}
+.search button {
+   background-image: url("../img/svg/icon-search.svg");   
+   background-size: 17px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+/* список покупателя */
+.basket-shop a {
+   color: #ffffff;
+   font-size: 17px;
+   font-weight: 400;
+   line-height: 18px;
+}
+
+.basket-shop .bookmark::before {
+   content: "";
+   background-image: url("../img/svg/icon-bookmark.svg");   
+   background-size: 17px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.basket-shop .cart::before {
+   content: "";
+   background-image: url("../img/svg/icon-cart.svg");   
+   background-size: 17px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.basket-shop .arrange {
+   background-color: #63a63e;
+}
+
+/* Секция с вводной частью сйта и формой входа */
+header .content-header, nav {
+   background-color: #f3f7f9;
+}
+.content-header h1 {
+   color: #ee3643;
+   font-size: 16px;
+   font-style: italic;
+   line-height: 23px;
+}
+.header-adвress {
+   color: #32425c;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 24px;
+   font-style: normal;
+}
+.header-adвress a {
+   color: #ee3643;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 21px;
+}
+.header-adвress a::before {
+   content: "";
+   background-image: url("../img/svg/icon-phone.svg");   
+   background-size: 19px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+.content-header .login {
+   background-color: white;
+}
+.content-header .login a {
+   color: #000000;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 21px;
+}
+.content-header .login a:first-child::before {
+   content: "";
+   background-image: url("../img/svg/icon-login.svg");   
+   background-size: 19px;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+nav {
+   background-color: #32425c;
+}
+nav a {
+   color: #ffffff;
+    font-size: 17px;
+   font-weight: 400;
+   line-height: 17px;
+}
+
+/* main */
+
+/* Информационная секция */
+.about-company {
+   background-color: white;
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+}
+.company h2 {
+   font-family: Cuprum;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+.company p {
+   font-weight: 400;
+   line-height: 24px;
+}
+.company ul {
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 20px;
+}
+.company a {
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.contact-company {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+}
+.contact-company h2 {
+   font-family: Cuprum;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+.contact-company p {
+   font-weight: 400;
+   line-height: 24px;
+}
+.popup-map {
+   display: none;
+}
+.popup-form {
+   display: none;
+}
+.popup-form  label{
+   color: #000000;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 18px;
+}
+
+/* footer */
+
+/* Подвал сайта с доп-навигацией */
+footer .aside-nav {
+   background-color: #32425c;
+}
+.aside-nav .footer-logo {
+   background-color: #ee3643;
+}
+.aside-nav .list-1 a {
+   color: #f1f5f7;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.aside-nav .list-2 a {
+   color: #ffd180;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.aside-nav address, a {
+   color: #f3f7f9;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.aside-nav address a {
+   color: #f3f7f9;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+
+}
+footer .feedback {
+   background-color: #293449;
+}
+.feedback p {
+   color: #ffffff;
+   font-family: Cuprum;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18px;
+}
+.feedback p a {
+   color: #ffd180;
+}
+.feedback .socials-icon a {
+   background-color: #212a3a;
+}
+
+
+/* Каталог */
+
+/* Хлебные крошки */
+.basket-shop .cart {
+   background-color: #ee3643;
+}
+.user-profile p {
+   color: #000000;
+   font-family: Cuprum;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 21px;
+}
+.user-profile li a {
+   color: #32425c;
+   font-family: Cuprum;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18px;
+   text-decoration: underline;
+}
+.user-profile li:last-child {
+   list-style: disc;
+}
+.breadcrumbs li {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+.breadcrumbs li a {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+
+}
+main h1 {
+   color: #32425c;
+   font-family: Cuprum;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+   background-color: #f2f6f8;
+}
+
+/* Форма каталога */
+
+.form-list {
+   background-color: white;
+}
+.form-list h3 {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+.form-list span {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 15px;
+   font-weight: 400;
+   line-height: 20px;
+   text-transform: uppercase;
+}
+/* НЕ РАБОТАЕТ, что то не правильно. */
+input[type="checkbox"] {
+   background-image: url(../img/svg/checkbox-on.svg);
+}
+.column-form button {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
+   background-color: white;
+}
+
+.list-catalog h2 {
+   display: none;
+}
+.list-catalog ul li {
+   border: 1px solid #e5e5e5;
+   background-color: #ffffff;
+}
+.list-catalog a {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 20px;
+}
+.list-catalog span:first-child {
+   color: #999999;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 18px;
+   text-decoration: line-through;
+   text-transform: uppercase;
+}
+.list-catalog span:last-child {
+   color: #ffffff;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 18px;
+   text-transform: uppercase;
+   background: url(../img/svg/red-button.svg) no-repeat 50% 50%;
+}

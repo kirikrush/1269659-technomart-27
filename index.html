@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html lang="ru">
    <head>
-      <meta charset="utf-8">
+      <meta charset="UTF-8">
       <title>HTML Academy: Техномарт</title>
+      <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style.css">
    </head>
    <body>
    <!-- Заметки сделал для себя, для ориентирования... -->
@@ -16,7 +19,7 @@
          </div>
          <div class="search"> <!-- Форма поиска -->
             <form action="" method="post">
-               <button>Поиск</button>
+               <button aria-label="Кнопка поиска"></button>
                <input type="text" name="search" placeholder="Поиск:">
             </form>
          </div>
@@ -25,7 +28,7 @@
                <!-- Псевдоелемент ::before с иконкой -->
                <a href="#">Закладки:0</a>
             </li>
-            <li class="cart">
+            <li class="cart-index">
                <!-- Псевдоелемент ::before с иконкой -->
                <a href="#">Корзина:0</a>
             </li>
@@ -301,18 +304,18 @@
             заехав в наш офис:
             </p>
             <!-- Здесь же будет раскрывающаяся карта -->
-            <img src="img/Слой_5.png" alt="" width="300" height="158">
-            <button>Заблудились? Напишите нам!</button>
+            <img src="img/Слой_5.png" alt="Изображение с картой" width="300" height="158">
+            <button aria-label="Кнопка с формой обратной связью.">Заблудились? Напишите нам!</button>
             
-            <div class="visually-hidden"> <!--Развернутая карта-->
-               <img src="img/Слой_4.png" alt="" width="940" height="447">
-               <button>Закрыть</button>
+            <div class="popup-map"> <!--Развернутая карта-->
+               <img src="img/Слой_4.png" alt="Развернутое изображение с картой" width="940" height="447">
+               <button aria-label="Закрыть карту">Закрыть</button>
             </div>
             <!-- Здесь будет попап -->
          </div>
       </section>
 
-      <section class="visually-hidden">
+      <section class="popup-form">
          <form action="" method="post">
             <label>
                Ваше имя:
@@ -326,7 +329,7 @@
                Текст письма:
                <textarea name="text" id="text" rows="5" placeholder="В свободной форме"></textarea>
             </label>
-            <button>Отправить</button>
+            <button aria-label="Кнопка отправить форму">Отправить</button>
          </form>
       </section>
    </main>
@@ -379,3 +382,4 @@
 
    </body>
 </html>
+
