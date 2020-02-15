@@ -1,319 +1,540 @@
-
-/* Для быстрого ориентирования и наглядности разделяю блоки коментариями(потом лишнее уберу) */
-
-/* Общие стили для конкретных элементов */
-/* стили для боди */
 body {
    margin: 0;
    padding: 0;
 
-   /* Типографика */
-   font-family: 'Cuprum', 'PT Sans', 'MyriadPro' sans-serif;
-   font-size: 16px;
+   font-family: "Cuprum";
+   font-size: 17px;
+   line-height: 18px;
    font-weight: normal;
-   line-height: 24px;
-   color: black;
 
-   /* Оформление */
-   background-color: white;
+   color: white;
 }
-/* стили для всех ссылок на странице */
+
 a {
    text-decoration: none;
-   font-family: 'Cuprum';
 }
-/* стили для всех списков */
-ul {
-   list-style: none;
-}
-/* стили для кнопок */
-button {
+/* HEADER      ************************************************** */
+header {
    color: white;
-   text-align: center;
-   vertical-align: middle ;
-   font-size: 14px;
-   line-height: 18px;
-   text-transform: uppercase;
+   background-color: #f4f7f9;
 }
 
-/* Стили для элементов по разделам и секциям */
-
-/* header */
-
-/* Секция с иконкой поиском и инфо о покупке */
-header .top-header {
+.top-header {
    background-color: #293449;
 }
-/* Логотип */
+.nav-header {
+   width: 940px;
+   /* height: 60px; */
+
+   line-height: 17px;
+
+   box-shadow: inset 0 -5px 0 #293449;
+   background-color: #32425c;
+}
+
+.top-header ul,
+.nav-header ul{
+   list-style: none;
+/* ВОПРОС. Почему к классам не пременяется свойство без тега ul ? */
+}
+
+.top-header a,
+.nav-header a{
+   color: white;
+}
+
 .header-logo {
+   width: 220px;
+   height: 47px;
+   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
    background-color: #ee3643;
-}
-/* форма поиска */
-.search {
-}
-.search button {
-   background-image: url("../img/svg/icon-search.svg");   
-   background-size: 17px;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-/* список покупателя */
-.basket-shop a {
-   color: #ffffff;
-   font-size: 17px;
-   font-weight: 400;
-   line-height: 18px;
+   text-align: center;
+   vertical-align: middle;
+
 }
 
-.basket-shop .bookmark::before {
-   content: "";
-   background-image: url("../img/svg/icon-bookmark.svg");   
-   background-size: 17px;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.basket-shop .cart::before {
-   content: "";
-   background-image: url("../img/svg/icon-cart.svg");   
-   background-size: 17px;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.basket-shop .arrange {
-   background-color: #63a63e;
-}
-
-/* Секция с вводной частью сйта и формой входа */
-header .content-header, nav {
-   background-color: #f3f7f9;
-}
 .content-header h1 {
    color: #ee3643;
    font-size: 16px;
    font-style: italic;
    line-height: 23px;
 }
-.header-adвress {
+.header-address a {
+   color: #ee3643;
+   font-size: 21px;
+   font-weight: 400;
+   line-height: 21px;
+   font-style: normal;
+}
+.header-address {
    color: #32425c;
    font-size: 14px;
    font-weight: 400;
    line-height: 24px;
    font-style: normal;
 }
-.header-adвress a {
-   color: #ee3643;
+.login a {
+   color: black;
    font-size: 21px;
    font-weight: 400;
    line-height: 21px;
-}
-.header-adвress a::before {
-   content: "";
-   background-image: url("../img/svg/icon-phone.svg");   
-   background-size: 19px;
-   background-position: center;
-   background-repeat: no-repeat;
-}
-.content-header .login {
+
    background-color: white;
 }
-.content-header .login a {
-   color: #000000;
-   font-size: 21px;
-   font-weight: 400;
-   line-height: 21px;
+/* ************************************************** */
+
+/* MAIN      ************************************************** */
+
+.benefits h2 {
+   display: none;
 }
-.content-header .login a:first-child::before {
-   content: "";
-   background-image: url("../img/svg/icon-login.svg");   
-   background-size: 19px;
-   background-position: center;
-   background-repeat: no-repeat;
+.benefits ul{
+   list-style: none;
 }
-nav {
-   background-color: #32425c;
-}
-nav a {
+.benefits h3 {
    color: #ffffff;
-    font-size: 17px;
-   font-weight: 400;
-   line-height: 17px;
-}
-
-/* main */
-
-/* Информационная секция */
-.about-company {
-   background-color: white;
-   color: #000000;
-   font-family: "PT Sans";
-   font-size: 13px;
-   font-weight: 400;
-}
-.company h2 {
-   font-family: Cuprum;
-   font-size: 30px;
-   font-weight: 400;
+   font-size: 24px;
+   font-weight: 700;
    line-height: 30px;
-   text-transform: uppercase;
 }
-.company p {
-   font-weight: 400;
-   line-height: 24px;
-}
-.company ul {
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 20px;
-}
-.company a {
+.benefits  p {
+   color: #ffffff;
    font-size: 14px;
    font-weight: 400;
    line-height: 18px;
    text-transform: uppercase;
 }
-.contact-company {
-   color: #000000;
-   font-family: "PT Sans";
-   font-size: 13px;
-   font-weight: 400;
+.benefits .slider-1 h3,
+.benefits .slider-2 h3 {
+   color: #ffffff;
+   font-size: 36px;
+   font-weight: 700;
+   line-height: 36px;
+   text-transform: uppercase;
 }
-.contact-company h2 {
+.benefits .slider-1 span,
+.benefits .slider-2 span {
+   color: #ffffff;
    font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+}
+.benefits .slider-1 a,
+.benefits .slider-2 a {
+   color: #ffffff;
+   font-family: Cuprum;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   background-color: #ee3643;
+}
+
+.popular-product .popular h2,
+.manufacturers .popular h2 {
+   color: #32425c;
    font-size: 30px;
    font-weight: 400;
    line-height: 30px;
    text-transform: uppercase;
 }
-.contact-company p {
+.popular-product .popular a,
+.manufacturers .popular a {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   padding: 15px 45px;;
+   background-color: #ff5357;
+}
+
+/* КАРТОЧКА ТОВАРА */
+
+.list-products {
+   width: 700px;
+   margin: 20px auto;
+ }
+ 
+ .list-product {
+   position: relative;
+   display: inline-block;
+   width: 218px;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   
+   line-height: 20px;
+   font-weight: bold;
+   text-align: center;
+   
+   border: 1px solid #ccc;
+ }
+
+.list-product .flag {
+   position: absolute;
+   top: -1px;
+   right: -1px;
+   
+   width: 60px;
+   height: 60px;
+   
+   text-indent: -1000px;
+   overflow: hidden;
+   z-index: 20;
+ }
+ 
+.list-product .flag-new {
+   background: url("../img/new_flag.png") no-repeat 0 0;
+ }
+
+.list-product .image {
+   width: 218px;
+   height: 168px;
+ }
+ 
+.list-product img {
+   max-width: 100%;
+ }
+
+ .list-product .title {
+   min-height: 40px;
+   padding: 0 25px;
+   margin-top: 10px;
+   margin-bottom: 15px;    
+ }
+ .list-product .title a {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 18px;
+   font-weight: 700;
+   line-height: 20px;
+ 
+ }
+
+ 
+ .list-product .discount {
+   min-height: 20px;
+   margin-top: 15px;
+   margin-bottom: 10px;
+   
+   color: #a9a9a9;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 18px;
+   text-decoration: line-through;
+   text-transform: uppercase; 
+}
+
+.list-product .price {
+   position: relative;
+   width: 80px;
+   margin: 10px auto;
+   margin-bottom: 20px;
+   padding: 10px 30px;
+   
+   color: #ffffff;
+   font-family: "PT Sans";
+   font-size: 17px;
+   font-weight: 700;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   background: #ee3643;
+   border-radius: 3px;
+ }
+ 
+.list-product .price:after {
+   content: "";
+   
+   position: absolute;
+   top: 0;
+   right: -20px;
+   
+   width: 0;
+   height: 0;
+   
+   border: 20px solid white;
+   border-left-color: #ee3643;
+ }
+
+ .list-product .actions {
+   position: absolute;
+   top: 0;
+   left: 0;
+   
+   width: 218px;
+   height: 88px;
+   padding: 40px 0;
+   
+   background-color: rgba(255,255,255,0.9);
+   z-index: 10;
+ }
+
+.list-product .actions .buy,
+.list-product .actions .bookmark {
+  display: block;
+  width: 129px;
+  margin: 0 auto;
+  margin-bottom: 7px;
+  padding: 7px 0;
+  
+  background-color: #63a63e;
+  border: 3px solid #63a63e;
+  border-bottom-color: #367315;
+  border-radius:3px;
+  
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  font-family: "Cuprum", sans-serif;
+  line-height: 18px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.list-product .actions .bookmark {
+   color: #32425c;
+   background: white;
+   border-bottom-color: #63a63e;
+ }
+
+ .list-product .actions {
+   display: none;
+ }
+ 
+ .list-product:hover .actions {
+   display: block;
+ }
+
+/* *******КАРТОЧКА ТОВАРА********* */
+
+.service-content .title-service h2{
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+
+.service-content .title-service p {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 14px;
    font-weight: 400;
    line-height: 24px;
 }
-.popup-map {
-   display: none;
+
+.service-content .list-service button {
+   color: #ffffff;
+   font-size: 21px;
+   font-weight: 700;
+   line-height: 30px;
 }
+
+.service-content .list-item h3 {
+   color: #32425c;
+   font-family: Cuprum;
+   font-size: 36px;
+   font-weight: 400;
+   line-height: 36px;
+   text-transform: uppercase;
+}
+
+.service-content .list-item p {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 24px;
+
+}
+.service-content .list-item:last-child button {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+}
+
+
+.about-company .company h2,
+.about-company .contact-company h2 {
+   color: #000000;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
+}
+
+.about-company .company li {
+   color: #000000;
+   font-family: Cuprum;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 20px;
+   list-style: none;
+}
+
+.about-company .company a,
+.about-company .contact-company button {
+   color: #ffffff;
+   font-size: 14px;
+   font-weight: 400;
+   line-height: 18px;
+   text-transform: uppercase;
+
+   background-color: #ee3643;
+}
+
+.about-company .company p,
+.about-company .contact-company p {
+   color: #000000;
+   font-size: 13px;
+   font-family: "PT Sans";
+   font-weight: 400;
+   line-height: 24px;
+}
+
+.popup-map,
 .popup-form {
    display: none;
 }
-.popup-form  label{
-   color: #000000;
-   font-family: Cuprum;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 18px;
-}
+/* ************************************************** */
 
-/* footer */
 
-/* Подвал сайта с доп-навигацией */
-footer .aside-nav {
+/* FOOTER */
+
+footer {
    background-color: #32425c;
-}
-.aside-nav .footer-logo {
-   background-color: #ee3643;
-}
-.aside-nav .list-1 a {
-   color: #f1f5f7;
-   font-family: Cuprum;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 24px;
-}
-.aside-nav .list-2 a {
-   color: #ffd180;
-   font-family: Cuprum;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 24px;
-}
-.aside-nav address, a {
-   color: #f3f7f9;
-   font-family: Cuprum;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 24px;
-}
-.aside-nav address a {
-   color: #f3f7f9;
-   font-family: Cuprum;
-   font-size: 18px;
-   font-weight: 400;
-   line-height: 24px;
+ }
 
-}
-footer .feedback {
-   background-color: #293449;
-}
-.feedback p {
+ footer .aside-nav .footer-logo {
+   width: 220px;
+   height: 68px;
+   box-shadow: inset 0 -5px 0 rgba(0, 0, 0, 0.24);
+   background-color: #ee3643;
+   text-align: center;
+   vertical-align: middle;
+ }
+
+ footer .aside-nav .list-1 li,
+ footer .aside-nav .list-2 li,
+ footer .aside-nav .list-1 a,
+ footer .aside-nav .list-2 a {
+    list-style: none;
+
+   color: #f1f5f7;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+ }
+ footer .aside-nav .list-2 a {
+   color: #ffd180;
+ }
+
+ footer .aside-nav address,
+ footer .aside-nav address a {
+   color: #f3f7f9;
+   font-size: 18px;
+   font-weight: 400;
+   line-height: 24px;
+   font-style: normal;
+ }
+
+ footer .feedback {
    color: #ffffff;
-   font-family: Cuprum;
    font-size: 16px;
    font-weight: 400;
    line-height: 18px;
+
+   background-color: #293449;
+ }
+
+ footer .feedback .socials-icon li {
+   display: inline-block;
+   width: 42px;
+   height: 42px;
+   background-color: #212a3a;
+   list-style: none;
 }
-.feedback p a {
+
+footer .feedback .main-feedback p,
+footer .feedback .main-feedback a {
+   font-size: 16px;
+   font-weight: 400;
+   line-height: 18px;
+   color: #fff;
+}
+footer .feedback .main-feedback a {
    color: #ffd180;
 }
-.feedback .socials-icon a {
-   background-color: #212a3a;
+
+/* ************************************************ */
+
+/* CSS Свойства страницы КАТАЛОГА */
+
+/* Cвойства с верху в низ пропуская повторяющиеся свойства с index */
+
+.content-header p {
+   color: #ee3643;
+   font-size: 16px;
+   font-style: italic;
+   line-height: 23px;
 }
 
-
-/* Каталог */
-
-/* Хлебные крошки */
-.basket-shop .cart {
-   background-color: #ee3643;
-}
-.user-profile p {
+.content-header .user-profile p {
    color: #000000;
-   font-family: Cuprum;
    font-size: 21px;
    font-weight: 400;
    line-height: 21px;
 }
-.user-profile li a {
+
+.content-header .user-profile li a {
    color: #32425c;
-   font-family: Cuprum;
    font-size: 16px;
    font-weight: 400;
    line-height: 18px;
    text-decoration: underline;
 }
-.user-profile li:last-child {
-   list-style: disc;
+.content-header .user-profile li:last-child {
+   list-style: disc !important;
+   /* Не хочет почемуто работать ... */
 }
-.breadcrumbs li {
-   color: #000000;
-   font-family: "PT Sans";
-   font-size: 13px;
-   font-weight: 400;
-   line-height: 18px;
-   text-transform: uppercase;
-}
+
+.breadcrumbs li,
 .breadcrumbs li a {
    color: #000000;
    font-family: "PT Sans";
    font-size: 13px;
    font-weight: 400;
    line-height: 18px;
-   text-transform: uppercase;
+   list-style: none;
 
+   text-transform: uppercase;
 }
+
 main h1 {
    color: #32425c;
-   font-family: Cuprum;
    font-size: 30px;
    font-weight: 400;
    line-height: 30px;
    text-transform: uppercase;
-   background-color: #f2f6f8;
 }
 
-/* Форма каталога */
-
-.form-list {
-   background-color: white;
+.column-form h2,
+.sort-catalog p:first-child {
+   color: #000000;
+   font-family: "PT Sans";
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 18px;
 }
+
 .form-list h3 {
    color: #000000;
    font-family: "PT Sans";
@@ -330,48 +551,41 @@ main h1 {
    line-height: 20px;
    text-transform: uppercase;
 }
-/* НЕ РАБОТАЕТ, что то не правильно. */
-input[type="checkbox"] {
-   background-image: url(../img/svg/checkbox-on.svg);
-}
-.column-form button {
-   color: #000000;
+
+.sort-catalog .sort  {
    font-family: "PT Sans";
    font-size: 13px;
    font-weight: 400;
    line-height: 18px;
-   background-color: white;
+   list-style: none;
+}
+/* НЕ могу сообразить как сделать первый li красным */
+.sort-catalog .sort li a:first-of-type(1) {
+   color: #ee3643;
+}
+/* Не могу сделать красное подчеркивание */
+.sort-catalog .sort a {
+   color: #000000;
+   opacity: 0.3;
+   text-decoration: dotted;
 }
 
-.list-catalog h2 {
+.popup-form-shop {
    display: none;
 }
-.list-catalog ul li {
-   border: 1px solid #e5e5e5;
-   background-color: #ffffff;
+
+.aside-catalog h2 {
+   color: #000000;
+   font-size: 30px;
+   font-weight: 400;
+   line-height: 30px;
+   text-transform: uppercase;
 }
-.list-catalog a {
+
+.aside-catalog p {
    color: #000000;
    font-family: "PT Sans";
-   font-size: 18px;
-   font-weight: 700;
-   line-height: 20px;
-}
-.list-catalog span:first-child {
-   color: #999999;
-   font-family: "PT Sans";
-   font-size: 17px;
-   font-weight: 700;
-   line-height: 18px;
-   text-decoration: line-through;
-   text-transform: uppercase;
-}
-.list-catalog span:last-child {
-   color: #ffffff;
-   font-family: "PT Sans";
-   font-size: 17px;
-   font-weight: 700;
-   line-height: 18px;
-   text-transform: uppercase;
-   background: url(../img/svg/red-button.svg) no-repeat 50% 50%;
+   font-size: 13px;
+   font-weight: 400;
+   line-height: 24px;
 }
