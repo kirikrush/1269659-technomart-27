@@ -57,6 +57,7 @@ header {
    color: #ee3643;
    font-size: 16px;
    font-style: italic;
+   font-weight: normal;
    line-height: 23px;
 }
 .header-address a {
@@ -314,7 +315,7 @@ header {
 
 .service-content .title-service h2{
    color: #000000;
-   font-family: "PT Sans";
+   font-family: "Cuprum";
    font-size: 30px;
    font-weight: 400;
    line-height: 30px;
@@ -323,7 +324,7 @@ header {
 
 .service-content .title-service p {
    color: #000000;
-   font-family: "PT Sans";
+   font-family: "Cuprum";
    font-size: 14px;
    font-weight: 400;
    line-height: 24px;
@@ -492,6 +493,7 @@ footer .feedback .main-feedback a {
    font-size: 21px;
    font-weight: 400;
    line-height: 21px;
+   font-style: normal;
 }
 
 .content-header .user-profile li a {
@@ -533,6 +535,7 @@ main h1 {
    font-size: 13px;
    font-weight: 400;
    line-height: 18px;
+   text-transform: uppercase;
 }
 
 .form-list h3 {
@@ -558,6 +561,7 @@ main h1 {
    font-weight: 400;
    line-height: 18px;
    list-style: none;
+   text-transform: uppercase;
 }
 /* НЕ могу сообразить как сделать первый li красным */
 .sort-catalog .sort li a:first-of-type(1) {
