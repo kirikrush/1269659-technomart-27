@@ -4,34 +4,33 @@
       <meta charset="UTF-8">
       <title>HTML Academy: Техномарт</title>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">      <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/style.css">
+      <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/style-min.css">
    </head>
    <body>
-      <!-- Заметки сделал для себя, для ориентирования... -->
-      <!-- Шапка сайта -->
       <header class="main-header">
-
          <nav class="main-navigation">
-
-            <section class="top-header"><!-- Секция с иконкой поиском и инфо о покупке -->
+            <section class="top-header">
                <div class="top-header-center">
-                  <a class="header-logo" href="index.html"><!-- Логотип -->
-                     <img src="img/top-logo.png" alt="Техномарт" width="220" height="47">
+                  <a class="header-logo" href="index.html">
+                     <img src="img/svg/logo-technomart.svg" alt="Техномарт" width="109" height="19">
                   </a>
-                  <div class="search"> <!-- Форма поиска -->
-                     <form action="" method="post">
-                        <button aria-label="Кнопка поиска"></button>
+                  <div class="search"> 
+                     <form action="index.html" method="post">
                         <input type="text" name="search" placeholder="Поиск:">
+                        <button aria-label="Кнопка поиска">
+                           <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
+                              <path fill="#ffffff" d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
+                           </svg>                           
+                        </button>
                      </form>
                   </div>
                   <ul class="basket-shop">
                      <li class="bookmark">
-                        <!-- Псевдоелемент ::before с иконкой -->
                         <a href="#">Закладки: 0</a>
                      </li>
                      <li class="cart-index">
-                        <!-- Псевдоелемент ::before с иконкой -->
                         <a href="#">Корзина: 0</a>
                      </li>
                      <li class="arrange">
@@ -40,28 +39,31 @@
                   </ul>   
                </div>
             </section>
-   
             <section class="content-header">
-
-               <div class="nav-content"> <!-- Секция с вводной частью сйта и формой входа -->
+               <div class="nav-content">
                   <h1>
                      Интернет-магазин
                      строительных материалов
                      и инструментов для ремонта
                   </h1>
-                  <address class="header-address"> <!-- Блок адресса -->
-                     <a href="tel:+78125550555">+7 (812) 555-05-55</a> <!-- Псевдоелемент ::before с иконкой -->
+                  <address class="header-address">
+                     <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                      <p>
                         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                      </p>
                   </address>
-                  <div class="login"> <!-- Блок авторизации -->
-                     <a href="#">Войти</a> <!-- Псевдоелемент ::before с иконкой -->
+                  <div class="login">
+                     <a href="#">
+                        Войти
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
+                           <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z"/>
+                           <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z"/>
+                        </svg>                        
+                     </a> 
                      <a href="#">Регистрация</a>
                   </div>
                </div>
-
-               <div class="nav-header"> <!-- Главная навигация по сайту -->
+               <div class="nav-header">
                   <ul class="user-navigation">
                      <li><a href="index.html">Главная</a></li>
                      <li><a href="#">Компания</a></li>
@@ -72,68 +74,46 @@
                      <li><a href="#">Контакты</a></li>
                   </ul>
                </div>
-
             </section>
-            
          </nav>
-
       </header>
-      
-      
-      <!-- Основной контент страницы -->
       <main class="main-container">
-
-         <section class="benefits"> <!-- Перечень услуг -->
-            <h2 class="benefits-title">Перечень услуг и преймуществ</h2> <!--Скроется в css или hidden в теге-->
+         <section class="benefits">
+            <h2 class="benefits-title">Перечень услуг и преймуществ</h2>
             <ul class="benefits-list">
                <li class="benefits-item Materials">
                   <div class="flag flag-new">новинка</div>
-
                   <h3>Материалы</h3>
                   <a href="#">На любой вкус</a>
                </li>
                <li class="benefits-item Tool">
                   <h3>Инструмент</h3>
-                  <a href="#">
-                     <p>На все случаи</p>
-                  </a>
-                  <!-- Здесь будет фоновая картинка -->
+                  <a href="#">На все случаи</a>
                </li>
                <li class="benefits-item Technic">
                   <h3>Техника</h3>
-                  <a href="#">
-                     <p>Для стройки</p>
-                  </a>
-                  <!-- Здесь будет фоновая картинка -->
+                  <a href="#">Для стройки</a>
                </li>
                <li class="benefits-item Discounts">
                   <h3>Скидки 50%</h3>
-                  <a href="#">
-                     <p>На 350 товаров</p>
-                  </a>
-                  <!-- Здесь будет фоновая картинка -->
+                  <a href="#">На 350 товаров</a>
                </li>
                <li class="benefits-item Delivery">
                   <h3>Доставка</h3>
-                  <a href="#">
-                     <p>Бесплатно</p>
-                  </a>
-                  <!-- Здесь будет фоновая картинка -->
+                  <a href="#">Бесплатно</a>
                </li>
-                  <!-- ВОПРОС. Как из подписка сделать слайдер?. -->
+               <!-- Здесь инпуты времено, я как зарберусь с js и слайдером, их уберу.
+               Прошу заметить этот коментарий и понять =) -->
                <input class="visually-hidden" type="radio" id="product-1" name="togle">
                <input class="visually-hidden" type="radio" id="product-2" name="togle" checked>
                <li class="slider">                             
                   <ul>
                      <li class="slider-list slide slider-1" id="slider1">
-                        <!--Фоновая картинка через ксс-->
                         <h3>Перфораторы</h3>
                         <p>Настоящие мужские игрушки</p>
                         <a href="catalog.html">Открыть каталог</a>
-                        
                      </li>
                      <li class="slider-list slide slider-2" id="slider2">
-                        <!--Фоновая картинка через ксс-->
                         <h3>Дрели</h3>
                         <p>Соседям на радость!</p>
                         <a href="catalog.html">Открыть каталог</a>
@@ -147,23 +127,24 @@
                      <label for="product-1">Первый</label>
                      <label for="product-2">Второй</label>
                   </div>       
-    
-
-                  <!-- <button>Влево</button>
-                  <button>Вправо</button> -->
                </li>
             </ul>
          </section>
-         
-         <section class="popular-product"> <!-- Секция с популярными товарами -->
+         <section class="popular-product">
             <div class="popular">
                <h2>Популярные товары:</h2>
                <a href="#">Все популярные товары</a>
             </div>
-            <ul class="list-products"> <!-- Карточки товара Каталог -->
+            <ul class="list-products">
                <li class="list-product">
                   <div class="actions">
-                     <a href="#" class="buy">Купить</a>
+                     <a href="#" class="buy">Купить
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                           <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                           <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                           <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                        </svg>
+                     </a>
                      <a href="#" class="bookmark">В закладки</a>
                   </div>   
                   <img width="218" height="170" src="./img/Perforator_1.png" alt="картинка  с перфоратором">
@@ -175,7 +156,13 @@
                </li>
                <li class="list-product">
                   <div class="actions">
-                     <a href="#" class="buy">Купить</a>
+                     <a href="#" class="buy">Купить
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                           <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                           <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                           <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                        </svg>
+                     </a>
                      <a href="#" class="bookmark">В закладки</a>
                   </div>   
                   <img width="218" height="170" src="./img/Perforator_2.png" alt="картинка  с перфоратором">
@@ -187,7 +174,13 @@
                </li>
                <li class="list-product">
                   <div class="actions">
-                     <a href="#" class="buy">Купить</a>
+                     <a href="#" class="buy">Купить
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                           <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                           <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                           <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                        </svg>
+                     </a>
                      <a href="#" class="bookmark">В закладки</a>
                   </div>   
                   <img width="218" height="170" src="./img/Perforator_3.png" alt="картинка  с перфоратором">
@@ -200,7 +193,13 @@
                <li class="list-product">
                   <div class="flag flag-new">новинка</div>
                   <div class="actions">
-                     <a href="#" class="buy">Купить</a>
+                     <a href="#" class="buy">Купить
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15">
+                           <circle fill="#ffffff" cx="4.5" cy="13.5" r="1.5"/>
+                           <circle fill="#ffffff" cx="12.5" cy="13.5" r="1.5"/>
+                           <path fill="#ffffff" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/>
+                        </svg>
+                     </a>
                      <a href="#" class="bookmark">В закладки</a>
                   </div>   
                   <img width="218" height="170" src="./img/Perforator_2.png" alt="картинка  с перфоратором">
@@ -212,13 +211,12 @@
                </li>
             </ul>
          </section>
-
-         <section class="manufacturers"> <!-- Секция с производителями -->
+         <section class="manufacturers">
             <div class="popular">
                <h2>Популярные производители:</h2>
                <a href="#">Все производителя</a>
             </div>
-            <ul class="list-manufacturers"> <!-- Производители -->
+            <ul class="list-manufacturers">
                <li><a href="#"><img src="img/bosch.png" alt="" width="126" height="37"></a></li>
                <li><a href="#"><img src="img/Makita.png" alt="" width="123" height="40"></a></li>
                <li><a href="#"><img src="img/DeWALT.png" alt="" width="146" height="44"></a></li>
@@ -229,9 +227,8 @@
                <li><a href="#"><img src="img/Metabo.png" alt="" width="204" height="69"></a></li>
             </ul>
          </section>
-
-         <section class="service"> <!-- Секция с сервисом и доставкой -->
-            <article class="service-content"> <!-- Сервис -->
+         <section class="service">
+            <article class="service-content">
                <div class="title-service">
                   <h2>Сервисы</h2>
                   <p>
@@ -240,14 +237,13 @@
                   </p>
                </div>
                <div class="service-list">
-                  <ul class="list-service"> <!-- Список сервиса -->
+                  <ul class="list-service">
                      <li><button>Доставка</button></li>
                      <li><button>Гарантия</button></li>
                      <li><button>Кредит</button></li>
                   </ul>
-                  <!-- Разделяющая картинка -->
                   <ul class="list-service-item">
-                     <li class="list-item"> <!-- Элемент списка -->
+                     <li class="list-item">
                         <h3>Доставка</h3>
                         <p>
                            Мы с удовольствием доставим ваш товар прямо<br>
@@ -256,7 +252,7 @@
                            поднимая его на ваш этаж!
                         </p>
                      </li>
-                     <li class="list-item"> <!-- Элемент списка -->
+                     <li class="list-item">
                         <h3>Гарантия</h3>
                         <p>
                            Если купленный у нас товар поломается или заискрит, <br>
@@ -266,7 +262,7 @@
                            Дом уж восстановите как-нибудь сами.
                         </p>
                      </li>
-                     <li class="list-item"> <!-- Элемент списка -->
+                     <li class="list-item">
                         <h3>Кредит</h3>
                         <p>
                            Залезть в долговую яму стало проще! <br>
@@ -278,9 +274,7 @@
                </div>
             </article>
          </section>
-
-         <section class="about-company"> <!-- Информационная секция -->
-            <!-- <div class="companea"> -->
+         <section class="about-company">
                <div class="company">
                   <h2>Компания «Техномарт»</h2>
                   <p>
@@ -298,23 +292,21 @@
                   </ul>
                   <a href="#">Подробнее о компании</a>
                </div>
-
                <div class="contact-company">
                   <h2>Контакты</h2>
                   <p>
                      Вы можете забрать товар сами,
                      заехав в наш офис:
                   </p>
-                  <!-- Здесь же будет раскрывающаяся карта -->
                   <img src="img/Слой_5.png" alt="Изображение с картой" width="300" height="158">
                   <button aria-label="Кнопка с формой обратной связью.">Заблудились? Напишите нам!</button>
                </div>
-               <div class="popup-map"> <!--Развернутая карта-->
+               <div class="popup-map">
                   <img src="img/Слой_4.png" alt="Развернутое изображение с картой" width="940" height="447">
                   <button class="modal-close" aria-label="Закрыть карту"></button>
                </div>         
                <div class="popup-form popup-form-contact">
-                  <form action="" method="post">
+                  <form action="index.html" method="post">
                      <div class="form-contact">
                         <label>
                            Ваше имя:
@@ -338,17 +330,14 @@
                   </form>
                </div>
          </section>
-
       </main>
-
-      <!-- Подвал сайта -->
       <footer class="main-footer">
-         <section class="aside-nav"> <!-- Подвал сайта с доп-навигацией -->
+         <section class="aside-nav">
             <div class="aside-nav-1">
-               <div class="footer-logo">
-                  <img src="img/footer-logo.png" alt="Техномарт" width="220" height="68"> <!-- Не забыть изменить цвет в svg yf #fff -->
-               </div>
-               <address>
+               <a class="footer-logo" href="index.html">
+                  <img src="img/svg/logo-technomart.svg" alt="Техномарт" width="109" height="19">
+               </a>
+                  <address>
                   г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
                   <a href="tel:+78125550555">+7 (812) 555-05-55</a>
                </address>
@@ -369,14 +358,13 @@
                </ul>
             </div>
          </section>
-
-         <section class="feedback"> <!-- Подвал с обратной связью и т.д. -->
+         <section class="feedback">
             <div class="feedback-info">
                <p class="feedback-p">
                &copy; 2010—2017 Компания «Техномарт»
                Все права защищены
                </p>
-               <ul class="socials-icon"> <!-- Социальные иконки -->
+               <ul class="socials-icon">
                   <li><a href="#" aria-label="Вконтакте"></a></li>
                   <li><a href="#" aria-label="Фейсбук"></a></li>
                   <li><a href="#" aria-label="Инстаграм"></a></li>
@@ -394,7 +382,5 @@
             </div>
          </section>
       </footer>
-
    </body>
 </html>
-
