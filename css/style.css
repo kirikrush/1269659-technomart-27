@@ -1971,3 +1971,8 @@ a.footer-logo:active {
 .slider-2 {
   display: block;
 }
+.slider ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
