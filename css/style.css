@@ -1136,7 +1136,7 @@ input[type="radio"].visually-hidden {
   list-style: none;
   margin-right: -1px;
 }
-.socials-icon li a {
+.socials-icon .socials {
   display: block;
   width: 42px;
   height: 40px;
@@ -1983,14 +1983,16 @@ li.sort-item a:active {
   opacity: 0.5;
   text-decoration: none;
 }
-.socials-icon li a:hover,
-.socials-icon li a:active {
+.socials-icon .socials:hover,
+.socials-icon .socials:active {
   background-color: #ee3643;
 }
-.fed-1 a:hover {
+.feedback-mail a:hover,
+.feedback-site a:hover {
   text-decoration: underline;
 }
-.fed-1 a:active {
+.feedback-mail a:active,
+.feedback-site a:active {
   color: #ee3643;
   text-decoration: none;
 }
