@@ -613,7 +613,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 100%;
   color: #000000;
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 700;
   line-height: 20px;
@@ -1511,7 +1511,6 @@ input[type="radio"].visually-hidden {
   font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
-  outline: none;
 }
 .filter-input-checkbox + label::before {
   content: "";
@@ -2003,4 +2002,11 @@ li.sort-item a:active {
 .form-contact input:focus, 
 .form-contact textarea:focus {
   border: 2px solid #ee3643;
+}
+.filter-input-checkbox:focus + label::before {
+  border: 2px solid #00adff;
+}
+.filter-input-radio:focus + label::after,
+.filter-input-radio:focus + label::before {
+  border: 2px solid #00adff;
 }
